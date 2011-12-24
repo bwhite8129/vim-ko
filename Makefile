@@ -119,7 +119,8 @@ doc/%.kox: $(VIMCOPY)/runtime/doc/%.txt
 # Vim 소스코드 가져오기
 $(VIMCOPY):
 	hg clone $(VIMREPO) $(VIMCOPY)
-$(VIMCOPY)/%: $(VIMCOPY)
+$(VIMCOPY)/%:
+	@$(MAKE) $(VIMCOPY)
 
 
 ## 길잡이
