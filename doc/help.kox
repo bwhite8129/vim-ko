@@ -88,18 +88,18 @@ Vim 돌아가게 만들기 ~
 상세설명서: 이 파일들은 Vim의 구석구석을 설명합니다.	*reference_toc*
 
 General subjects ~
-|intro.txt|	general introduction to Vim; notation used in help files
-|help.txt|	overview and quick reference (this file)
-|index.txt|	alphabetical index of all commands
-|help-tags|	all the tags you can jump to (index of tags)
-|howto.txt|	how to do the most common editing tasks
-|tips.txt|	various tips on using Vim
-|message.txt|	(error) messages and explanations
-|quotes.txt|	remarks from users of Vim
-|todo.txt|	known problems and desired extensions
-|develop.txt|	development of Vim
-|debug.txt|	debugging Vim itself
-|uganda.txt|	Vim distribution conditions and what to do with your money
+|intro.txt|	Vim의 일반적인 소개; 도움말 파일에 사용된 표기법
+|help.txt|	개요와 빠른 참조(이 파일)
+|index.txt|	전체 명령에 대한 알파벳순 목차
+|help-tags|	바로가기를 위한 모든 태그(태그 목차)
+|howto.txt|	가장 일반적인 편집 작업 방법
+|tips.txt|	Vim 사용에 대한 다양한 팁
+|message.txt|	(에러) 메시지와 설명
+|quotes.txt|	Vim 사용자들의 이야기
+|todo.txt|	알려진 문제점 및 사람들이 바라는 기능 확장
+|develop.txt|	Vim 개발
+|debug.txt|	Vim 자체에 대한 디버깅
+|uganda.txt|	Vim 배포 조건과 당신의 돈으로 해야할 일
 
 Basic editing ~
 |starting.txt|	starting Vim, Vim command arguments, initialisation
