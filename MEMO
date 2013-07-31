@@ -20,13 +20,14 @@ Last change:	새로고침:? 마지막 변경:?
 
 mode	모드? 상태?
 normal mode	보통? 일반? mode
-visual mode	가시? 시각? mode
+visual mode	시각? 가시? 비주얼? mode
 insert mode	입력? 삽입? mode
-command line mode	명령줄 상태
+command line mode	명령줄 mode
 
 replace	수정? 바꾸기?
-option	설정? 설정사항? 선택사항? 기호? 옵션?
+option	설정? 옵션? 설정사항? 선택사항? 기호?
 chapter	장
+section	절
 hyperlinks	링크?
 cursor	커서?
 tag	태그?
@@ -35,6 +36,15 @@ menu	메뉴
 menu bar	메뉴? 메뉴바?
 prompt	명령줄? 프롬프트?
 text	글자? 글자들? 텍스트? 내용?
+mark	마크?
+window	윈도우?
+quickfix	퀵픽스? 빠른 수정?
+location list(quickfix와 유사한 것)	위치 리스트?
+conceal	숨김? 컨실?
+diff	디프? 차이?
+match(문법 강조에서의..)	매치
+view(:mkdview에서의..)	뷰
+session	세션
 
 foo? bars?	아무개? 갑? 을? 하나? 두울?
 
@@ -47,8 +57,9 @@ default	기본값?
 alternate file	다른 파일? 
 modifier command	수식 명령어? 꾸밈 명령어?
 label	이름표? 라벨?
-buffer	버퍼?
+buffer	버퍼
 
+color scheme	색 조합? 컬러스킴?
 
 
 
@@ -75,7 +86,7 @@ mapping	매핑?
 
 restore	불러오다
 autocommand	자동명령
-directory	디렉토리
+directory	디렉터리
 
 hidden buffer	숨겨진 버퍼
 alternate buffer	교대 버퍼
@@ -83,16 +94,21 @@ binary file	이진 파일
 swap file	임시 파일
 keymap	키맵
 operator	오퍼레이터? 연산자? 명령? 변환기? 
-text object	문자열 객체? 텍스트 객체?
+text object	텍스트 대상? 문자열 객체? 텍스트 객체?
 horizontal scroll bar	수평 스크롤 바
 blockwise Visual mode	블록 가시 상태? 구역 가시 상태?
+abbreviation	약어
+register	레지스터
+filetype	파일타입? 파일 형식? filetype?
+flag	플래그? 선택사항?
 
 
-Vim	그대로? 빔?
-Microsoft Windows	그대로? 윈도우즈?
+Vim	빔? Vim?
+Microsoft Windows	마이크로소프트 윈도? MS 윈도? MS-Windows?
 
-Note	유의? 유의사항?
+Note	Note? 유의? 유의사항?
 한글 키워드, 태그
+
 
 
 # vim:ts=24

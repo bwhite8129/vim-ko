@@ -41,7 +41,7 @@ Vim 주무르기
 |usr_40.txt|  새로운 명령 만들기
 |usr_41.txt|  Vim 스크립트 만들기
 |usr_42.txt|  새 메뉴 추가하기
-|usr_43.txt|  filetype 사용하기
+|usr_43.txt|  파일타입 사용하기
 |usr_44.txt|  나만의 문법 강조 만들기
 |usr_45.txt|  내 언어 고르기
 
@@ -314,7 +314,7 @@ Vim 주무르기 ~
 		|42.3|	Various
 		|42.4|	Toolbar and popup menus
 
-|usr_43.txt|  filetype 사용하기
+|usr_43.txt|  파일타입 사용하기
 		|43.1|	Plugins for a filetype
 		|43.2|	Adding a filetype
 
