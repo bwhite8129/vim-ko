@@ -28,7 +28,7 @@ command line mode	명령줄 모드
 Ex mode	Ex 모드
 
 replace	수정? 바꾸기?
-option	설정? 옵션? 설정사항? 선택사항? 기호?
+option	옵션? 설정?
 chapter	장
 section	절
 hyperlinks	링크?
@@ -36,7 +36,7 @@ cursor	커서
 tag	태그?
 shell	셸
 menu	메뉴
-menu bar	메뉴? 메뉴바?
+menu bar	메뉴바? 메뉴?
 prompt	명령줄? 프롬프트?
 text	글자? 글자들? 텍스트? 내용?
 mark	마크?

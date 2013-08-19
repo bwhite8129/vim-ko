@@ -4,7 +4,7 @@
 
 AUTHOR?=$(shell cat AUTHOR || echo 신재호)
 
-VERSION:=7.3
+VERSION:=7.4b
 REVISION:=$(shell git rev-parse HEAD | cut -b1-6)
 
 VIMREPO:=https://vim.googlecode.com/hg/
