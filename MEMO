@@ -41,7 +41,8 @@ toolbar	도구막대? 도구 모음? 툴바?
 prompt	명령줄? 프롬프트?
 text	글자? 글자들? 텍스트? 내용?
 mark	마크?
-window	윈도우?
+jump	뛰다
+window	창
 quickfix	퀵픽스? 빠른 수정?
 location list(quickfix와 유사한 것)	위치 리스트?
 conceal	숨김? 컨실?
