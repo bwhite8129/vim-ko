@@ -26,8 +26,9 @@ visual mode	시각 모드
 insert mode	입력 모드
 command line mode	명령줄 모드
 Ex mode	Ex 모드
+replace mode	바꾸기 모드
 
-replace	수정? 바꾸기?
+replace	바꾸기
 option	옵션? 설정?
 chapter	장
 section	절
@@ -42,6 +43,7 @@ prompt	명령줄? 프롬프트?
 text	글자? 글자들? 텍스트? 내용?
 mark	마크?
 jump	뛰다
+yank	복사
 window	창
 quickfix	퀵픽스? 빠른 수정?
 location list(quickfix와 유사한 것)	위치 리스트?
@@ -79,7 +81,7 @@ formatted text	예쁘게?
 patterns	패턴? 꼴?
 Moving	이동하기? 돌아다니기?
 Tuning	주무르기?
-reference manual	참조 설명서? 상세 설명서?
+reference manual	상세 설명서
 
 status line	상태표시줄
 empty file	빈 파일
@@ -98,10 +100,10 @@ alternate buffer	교대 버퍼
 binary file	이진 파일
 swap file	임시 파일
 keymap	키맵
-operator	오퍼레이터? 연산자? 명령? 변환기? 
-text object	텍스트 대상? 문자열 객체? 텍스트 객체?
+operator	오퍼레이터
+text object	텍스트 오브젝트
 horizontal scroll bar	수평 스크롤 바
-blockwise Visual mode	블록 가시 상태? 구역 가시 상태?
+blockwise Visual mode	블록 시각 모드
 abbreviation	약어
 register	레지스터
 filetype	파일타입? 파일 형식? filetype?
