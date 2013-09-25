@@ -108,6 +108,7 @@ abbreviation	약어
 register	레지스터
 filetype	파일타입? 파일 형식? filetype?
 flag	플래그? 선택사항?
+modeline	모드 줄
 
 
 Vim	Vim
