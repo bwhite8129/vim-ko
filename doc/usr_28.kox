@@ -1,4 +1,4 @@
-*usr_28.txt*	Vim version 7.0 대상.  새로고침: 2006 Apr 24
+*usr_28.txt*	Vim version 7.4 대상.  새로고침: 2008년 6월 14일
 
 		      VIM 사용설명서 - Bram Moolenaar 저
 				       정지용 역
@@ -20,7 +20,7 @@
 |28.7|	문법에 따라 접기
 |28.8|	표현식에 따라 접기
 |28.9|	바뀌지 않은 부분을 접기
-|28.10| 접는 방법 선택하기
+|28.10|	접는 방법 선택하기
 
 다음 장: |usr_29.txt|  프로그램 코드 탐험하기
 이전 장: |usr_27.txt|  찾기 명령과 패턴
@@ -386,7 +386,7 @@
 이 기능은 같은 창에서 'diff' 설정을 켰을 때 유용합니다.  |vimdiff| 프로그램이
 하는 것처럼 말이지요.  예: >
 
-	setlocal diff foldmethod=diff scrollbind nowrap foldlevel=1
+	:setlocal diff foldmethod=diff scrollbind nowrap foldlevel=1
 
 한 파일의 여러 버전을 여러 창에서 비교해서 볼 때 위 명령을 모든 창에서
 실행시키십시오.  각 창의 동일한 부분은 접혀서 사라지고, 차이가 있는 부분만

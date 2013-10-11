@@ -1,4 +1,4 @@
-*usr_05.txt*	For Vim version 7.0.  새로고침: 2006 Apr 24
+*usr_05.txt*	Vim version 7.0 대상.  새로고침: 2012년 11월 20일
 
 		      VIM 사용설명서 - Bram Moolenaar 저
 				       심규진 역
@@ -199,11 +199,11 @@ vimrc 파일에 추가하면 됩니다.: >
 text"는 자동명령입니다. 이 명령은 파일 타입이 "text"일 경우 자동으로 다음에
 오는 명령을 실행합니다. "setlocal textwidth=78"은 현재 파일에 대해서만
 'textwidth'를 78로 설정합니다.
->
 
+							*restore-cursor*  >
 	autocmd BufReadPost *
-	    \ if line("'\"") > 0 && line("'\"") <= line("$") |
-	    \   exe "normal g`\"" |
+	    \ if line("'\"") > 1 && line("'\"") <= line("$") |
+	    \   exe "normal! g`\"" |
 	    \ endif
 
 이것 또한 자동 명령입니다. 이 명령은 파일을 읽어들인 직후에 실행됩니다.

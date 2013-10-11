@@ -1,4 +1,4 @@
-*usr_25.txt*	Vim version 7.0 대상.  새로고침: 2006 Apr 24
+*usr_25.txt*	Vim version 7.4 대상.  새로고침: 2007년 5월 11일
 
 		      VIM 사용설명서 - Bram Moolenaar 저
 				       정지용 역
@@ -253,8 +253,8 @@ $VIMRUNTIME/macros/justify.vim.
 
 탭
 
-4의 배수로 들여쓰기를 하려면, 'shiftwidth'를 4로 설정하면 됩니다.  하지만 탭을
-누르면 8칸씩 들여쓰기가 됩니다.  이 들여쓰기 정도를 바꾸려면,
+4의 배수로 들여쓰기를 하려면, 'shiftwidth'를 4로 설정하면 됩니다.  하지만
+<Tab>을 누르면 8칸씩 들여쓰기가 됩니다.  이 들여쓰기 정도를 바꾸려면,
 'softtabstop'(소프트탭크기) 설정을 변경하면 됩니다: >
 
 	:set softtabstop=4

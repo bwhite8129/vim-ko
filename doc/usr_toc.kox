@@ -1,4 +1,4 @@
-*usr_toc.txt*	Vim version 7.0 대상.  새로고침: 2006년 4월18일
+*usr_toc.txt*	Vim version 7.4 대상.  새로고침: 2010년 7월 20일
 
 		      VIM 사용설명서 - Bram Moolenaar 저
 				       신재호 역
@@ -251,7 +251,7 @@ Vim 돌아가게 만들기
 		|28.7|	Folding by syntax
 		|28.8|	Folding by expression
 		|28.9|	Folding unchanged lines
-		|28.10| Which fold method to use?
+		|28.10|	Which fold method to use?
 
 |usr_29.txt|  프로그램 코드 탐험하기
 		|29.1|	Using tags
@@ -276,9 +276,10 @@ Vim 돌아가게 만들기
 		|31.5|	Various
 
 |usr_32.txt|  실행취소 트리
-		|32.1|	Numbering changes
-		|32.2|	Jumping around the tree
-		|32.3|	Time travelling
+		|32.1|	Undo up to a file write
+		|32.2|	Numbering changes
+		|32.3|	Jumping around the tree
+		|32.4|	Time travelling
 
 ==============================================================================
 Vim 주무르기 ~

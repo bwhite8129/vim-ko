@@ -1,4 +1,4 @@
-*usr_40.txt*	Vim version 7.3 대상.  새로고침: 2006 Jun 21
+*usr_40.txt*	Vim version 7.4 대상.  새로고침: 2013년 8월 5일
 
 		      VIM 사용설명서 - Bram Moolenaar 저
 				       정지용 역
@@ -426,14 +426,14 @@ CTRL-C로 매핑을 멈출 수도 있습니다(윈도우에서는 CTRL-Break).
 	:  read !date
 	:endfunction
 
-이 함수가 파일 저장 직전에 매번 불려야겠지요.  다음과 같이 하면 됩니다: >
+이 함수가 버퍼를 저장하기 직전에 매번 불려야겠지요.  다음과 같이 하면 됩니다:
+>
+	:autocmd BufWritePre *  call DateInsert()
 
-	:autocmd FileWritePre *  call DateInsert()
-
-"FileWritePre"는 자동명령을 작동시키는 이벤트입니다: 파일을 쓰기 직전(pre).
-"*"은 자동명령을 적용할 파일명 패턴입니다.  이 경우에는 모든 파일에
-적용됩니다.
-   이 명령이 수행되면, ":write"를 할 때마다 빔은 해당되는 FileWritePre
+"BufWritePre"는 자동명령을 작동시키는 이벤트입니다: 버퍼를 파일에 쓰기
+직전(pre).  "*"은 자동명령을 적용할 파일명 패턴입니다.  이 경우에는 모든
+파일에 적용됩니다.
+   이 명령이 수행되면, ":write"를 할 때마다 빔은 해당되는 BufWritePre
 자동명령이 있는지 검사합니다.  그래서 자동명령을 수행한 후, 실제로 ":write"를
 수행합니다.
    :autocmd 명령의 일반적인 형태는 다음과 같습니다: >

@@ -1,11 +1,11 @@
-*help.txt*	Vim version 7.0 대상.  새로고침: 2007년 4월17일
+*help.txt*	Vim version 7.4 대상.  새로고침: 2012년 12월 6일
 
 			VIM - 도움말 시작 파일
 									 k
-       돌아다니기:  화살표키를 사용하거나, "h"로 왼쪽, "j"로 아래쪽,   h   l
+       돌아다니기:  화살표 키를 사용하거나, "h"로 왼쪽, "j"로 아래쪽,  h   l
 		    "k"로 위쪽, "l"로 오른쪽으로 이동할 수 있습니다.	 j
  이 창을 닫으려면:  ":q<Enter>"를 칩니다.
- Vim에서 나가려면:  ":qa!<Enter>"를 칩니다(주의: 모든 바뀐점이 날아갑니다!).
+ Vim에서 나가려면:  ":qa!<Enter>"를 칩니다(주의: 모든 변경사항이 날아갑니다!).
 
 설명으로 이동하기:  커서를 태그(가령, |하나|) 위로 옮긴 다음, CTRL-]를 칩니다.
   마우스를 쓰려면:  ":set mouse=a"로 마우스를 켜줍니다(xterm 또는 GUI에서).
@@ -16,16 +16,18 @@
 		    인자로 넘겨주면 도움말을 열어볼 수 있습니다.
 		    쓰이는 상황도 함께 적어주면 더 정확하게 찾을 수 있습니다:
 							*help-context*
-			  상황		   접두어	   예시		~
-		      보통상태 명령	   (없음)	   :help x
-		      가시상태 명령	     v_		   :help v_u
-		      입력상태 명령	     i_		   :help i_<Esc>
+			  모드		   접두어	   예시		~
+		      보통 모드 명령	   (없음)	   :help x
+		      시각 모드 명령	     v_		   :help v_u
+		      입력 모드 명령	     i_		   :help i_<Esc>
 		      명령줄 명령	     :		   :help :quit
 		      명령줄 편집 도중	     c_		   :help c_<Del>
 		      Vim 명령 인자	     -		   :help -r
-		      설정사항		     '		   :help 'textwidth'
+		      옵션		     '		   :help 'textwidth'
       도움말 찾기:  ":help word"를 친 다음, CTRL-D를 누르면 "word"와 관련된
 		    도움말 항목들을 볼 수 있습니다.
+		    또는 ":helpgrep word"를 사용하세요. |:helpgrep|
+		    
 
 VIM은 Vi IMproved의 약자이며, "빔"이라고 읽습니다.  VIM은 많은 분들의 도움을
 받아 Bram Moolenaar씨가 만들었습니다.  |credits| 참고.
@@ -90,6 +92,7 @@ Vim 돌아가게 만들기 ~
 General subjects ~
 |intro.txt|	Vim의 일반적인 소개; 도움말 파일에 사용된 표기법
 |help.txt|	개요와 빠른 참조(이 파일)
+|helphelp.txt|	도움말 이용에 관하여
 |index.txt|	전체 명령에 대한 알파벳순 목차
 |help-tags|	바로가기를 위한 모든 태그(태그 목차)
 |howto.txt|	가장 일반적인 편집 작업 방법
@@ -126,7 +129,7 @@ Advanced editing ~
 |tabpage.txt|	commands for using multiple tab pages
 |syntax.txt|	syntax highlighting
 |spell.txt|	spell checking
-|diff.txt|	working with two or three versions of the same file
+|diff.txt|	working with two to four versions of the same file
 |autocmd.txt|	automatically executing commands on an event
 |filetype.txt|	settings done specifically for a type of file
 |eval.txt|	expression evaluation, conditional commands
@@ -143,6 +146,8 @@ Special issues ~
 |farsi.txt|	Farsi (Persian) editing
 |hebrew.txt|	Hebrew language support and editing
 |russian.txt|	Russian language support and editing
+|ft_ada.txt|	Ada (the programming language) support
+|ft_sql.txt|	about the SQL filetype plugin
 |hangulin.txt|	Hangul (Korean) input mode
 |rileft.txt|	right-to-left editing mode
 
@@ -154,6 +159,7 @@ GUI ~
 
 Interfaces ~
 |if_cscop.txt|	using Cscope with Vim
+|if_lua.txt|	Lua interface
 |if_mzsch.txt|	MzScheme interface
 |if_perl.txt|	Perl interface
 |if_pyth.txt|	Python interface
@@ -189,11 +195,13 @@ Remarks about specific systems ~
 |os_win32.txt|	MS-Windows 95/98/NT
 						*standard-plugin-list*
 Standard plugins ~
-|pi_gzip.txt|	Reading and writing compressed files
-|pi_netrw.txt|	Reading and writing files over a network
-|pi_paren.txt|	Highlight matching parens
-|pi_tar.txt|	Tar file explorer
-|pi_zip.txt|	Zip archive explorer
+|pi_getscript.txt| Downloading latest version of Vim scripts
+|pi_gzip.txt|      Reading and writing compressed files
+|pi_netrw.txt|     Reading and writing files over a network
+|pi_paren.txt|     Highlight matching parens
+|pi_tar.txt|       Tar file explorer
+|pi_vimball.txt|   Create a self-installing Vim script
+|pi_zip.txt|       Zip archive explorer
 
 추가설명서:					*local-additions*
 
@@ -207,7 +215,8 @@ g<RightMouse>, 또는 <C-RightMouse>를 이용하면 원래 있던 곳으로 돌
 그러면 명령을 읽기가 훨씬 쉬워지지요.
 
 한편, | 사이에 있지 않은 그냥 낱말이라도, 그 위에서 CTRL-]를 누르면 Vim이
-가장 관련이 깊은 도움말을 찾아줍니다.
+가장 관련이 깊은 도움말을 찾아줍니다. 특히 작은따옴표 안에 있는 옵션들은요.
+예: 'compatible'.
 
 ------------------------------------------------------------------------------
  vim:tw=78:fo=tcq2:isk=!-~,^*,^\|,^\":ts=8:ft=help:norl:

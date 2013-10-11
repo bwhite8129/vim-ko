@@ -46,6 +46,7 @@ jump	뛰다
 yank	복사
 window	창
 quickfix	퀵픽스? 빠른 수정?
+preview window	미리보기 창
 location list(quickfix와 유사한 것)	위치 리스트?
 conceal	숨김? 컨실?
 diff	디프? 차이?
