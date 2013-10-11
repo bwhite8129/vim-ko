@@ -1,4 +1,4 @@
-*help.txt*	Vim version 7.4 대상.  새로고침: 2012년 12월 6일
+*help.txt*	Vim version 7.4 대상.  새로 고침: 2012년 12월 6일
 
 			VIM - 도움말 시작 파일
 									 k
@@ -102,7 +102,7 @@ General subjects ~
 |todo.txt|	알려진 문제점 및 사람들이 바라는 기능 확장
 |develop.txt|	Vim 개발
 |debug.txt|	Vim 자체에 대한 디버깅
-|uganda.txt|	Vim 배포 조건과 당신의 돈으로 해야할 일
+|uganda.txt|	Vim 배포 조건과 당신의 돈으로 해야 할 일
 
 Basic editing ~
 |starting.txt|	starting Vim, Vim command arguments, initialisation

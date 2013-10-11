@@ -1,4 +1,4 @@
-*usr_toc.txt*	Vim version 7.4 대상.  새로고침: 2010년 7월 20일
+*usr_toc.txt*	Vim version 7.4 대상.  새로 고침: 2010년 7월 20일
 
 		      VIM 사용설명서 - Bram Moolenaar 저
 				       신재호 역
@@ -262,7 +262,7 @@ Vim 돌아가게 만들기
 
 |usr_30.txt|  프로그램 편집하기
 		|30.1|	Compiling
-		|30.2|	Indenting C files
+		|30.2|	Indenting C style text
 		|30.3|	Automatic indenting
 		|30.4|	Other indenting
 		|30.5|	Tabs and spaces
