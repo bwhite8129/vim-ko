@@ -23,7 +23,7 @@
 |usr_12.txt|  멋진 기술들
 
 효율적으로 편집하기
-|usr_20.txt|  명령줄 명령들 빨리 치기
+|usr_20.txt|  명령줄 명령 빨리 치기
 |usr_21.txt|  나갔다가 되돌아오기
 |usr_22.txt|  편집할 파일 찾기
 |usr_23.txt|  특별한 파일 편집하기
@@ -177,7 +177,7 @@ Vim 돌아가게 만들기
 
 따로따로 읽어도 되는 내용들.
 
-|usr_20.txt|  명령줄 명령들 빨리 치기
+|usr_20.txt|  명령줄 명령 빨리 치기
 		|20.1|	Command line editing
 		|20.2|	Command line abbreviations
 		|20.3|	Command line completion

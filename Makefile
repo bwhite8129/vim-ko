@@ -79,7 +79,7 @@ translate: doc/$(D).kox $(VIMCOPY)/runtime/doc/$(D).txt
 	    +"set scrollbind | norm wK" \
 	    +"set scrollbind | norm \`\"" \
 	    +"vnew MEMO | set noscrollbind | norm Hw" \
-	    +"vertical resize 80" \
+	    +"vertical resize 90" \
 
 # 설명서 번역 준비
 doc/%.kox: $(VIMCOPY)/runtime/doc/%.txt
@@ -100,7 +100,7 @@ doc/%.kox: $(VIMCOPY)/runtime/doc/%.txt
 	}; \
 	runvim $@ \
 	    +'norm ggnoFor Vim version $(VERSION).0"ny$$uoVim version $(VERSION) 대상.0"my$$uc@r@t@r@t' \
-	    +'norm ggnoLast change:0"ny$$uo새로고침:0"my$$uc@r@t@r@t' \
+	    +'norm ggnoLast change:0"ny$$uo새로 고침:0"my$$uc@r@t@r@t' \
 	    +'norm ggno^Copyright: see |manual-copyright|0"ny$$uo저작권: |manual-copyright| 참고0"my$$uc@r' \
 	; \
 	runvim $@ \
