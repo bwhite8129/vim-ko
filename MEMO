@@ -2,6 +2,7 @@
 고유명사: 되도록 한글 표현으로.  단, 영어 표현으로 자주 쓰이거나 프로그램 이름인 경우 등은 예외로 함
           예) Vim, GUI, 마이크로소프트 윈도, 아이디
 Note, {something} 와 같이 색깔 강조가 의미있게 들어가는 것은 영어 표현 유지
+절 내에서 대문자로 표시된 소제목 부분은 다음 줄에 -로 밑줄을 그음
 
 command	명령
 line	줄
@@ -62,7 +63,7 @@ opened fold	펼쳐진 fold
 column	열
 scroll binding	스크롤 연계? 스크롤 묶음?
 default	기본값?
-alternate file	다른 파일? 
+alternate file	교대 파일
 modifier command	수식 명령어? 꾸밈 명령어?
 label	이름표? 라벨?
 buffer	버퍼
