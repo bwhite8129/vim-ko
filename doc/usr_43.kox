@@ -6,7 +6,7 @@
 			      파일타입 사용하기
 
 
-어떤 형식의 파일, 예를 들어 C 프로그램이나 쉘 스크립트를 편집할 때 늘 일정한
+어떤 형식의 파일, 예를 들어 C 프로그램이나 셸 스크립트를 편집할 때 늘 일정한
 설정과 매핑을 사용하게 됩니다.  매번 똑같은 설정을 하려면 금방 귀찮아지겠지요.
 이번 장에서는 이걸 자동으로 하는 방법을 알아보겠습니다.
 
@@ -33,7 +33,7 @@
 	mkdir ~/.vim
 	mkdir ~/.vim/ftplugin
 <
-   유닉스가 아니라면, 'runtimepath' 설정값으로 빔이 "ftplugin" 디렉터리를
+   유닉스가 아니라면, 'runtimepath' 설정값으로 Vim이 "ftplugin" 디렉터리를
    어디서 찾는 지 확인해봅시다: >
 
 	set runtimepath
@@ -67,7 +67,7 @@
 ==============================================================================
 *43.2*	파일타입 추가하기
 
-빔에서 인식하지 못하는 형식의 파일을 사용한다면, 다음과 같이 인식시켜
+Vim에서 인식하지 못하는 형식의 파일을 사용한다면, 다음과 같이 인식시켜
 보십시오.  먼저 자신만의 런타임 디렉터리가 필요한데, 위 |your-runtime-dir|를
 참고하세요.
 
@@ -112,12 +112,12 @@
 	au BufNewFile,BufRead /usr/share/scripts/*	setf ruby
 	augroup END
 
-이제 빔은 "filetype.vim"파일을 'runtimepath'에 있는 각 디렉터리들에서
+이제 Vim은 "filetype.vim"파일을 'runtimepath'에 있는 각 디렉터리들에서
 찾습니다.  먼저 ~/.vim/filetype.vim을 찾습니다.  *.txt 파일을 처리하는
 자동명령이 여기서 정의됩니다.  그리고 'runtimepath'의 중간인 $VIMRUNTIME에서
 filetype.vim 파일을 찾습니다.  마지막으로 ~/.vim/after/filetype.vim을 찾고,
 /usr/share/scripts의 파일들을 루비 파일로 인식하는 자동명령이 정의됩니다.
-   이제 /usr/share/scripts/README.txt를 편집하면, 빔은 자동명령을 정의된
+   이제 /usr/share/scripts/README.txt를 편집하면, Vim은 자동명령을 정의된
 순서대로 검사합니다.  *.txt 패턴이 일치하고, "setf text"가 실행되며 파일타입이
 "text"가 됩니다.  루비 파일을 위한 패턴도 역시 일치하고 "setf ruby"가
 실행됩니다.  하지만 'filetype'이 이미 "text"로 설정되었으므로 아무 일도

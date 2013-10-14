@@ -28,7 +28,7 @@
 |usr_22.txt|  편집할 파일 찾기
 |usr_23.txt|  특별한 파일 편집하기
 |usr_24.txt|  빠르게 입력하기
-|usr_25.txt|  예쁘게 편집하기
+|usr_25.txt|  서식에 맞추어 편집하기
 |usr_26.txt|  반복하기
 |usr_27.txt|  찾기 명령과 패턴
 |usr_28.txt|  접기
@@ -217,7 +217,7 @@ Vim 돌아가게 만들기
 		|24.9|	Digraphs
 		|24.10|	Normal mode commands
 
-|usr_25.txt|  예쁘게 편집하기
+|usr_25.txt|  서식에 맞추어 편집하기
 		|25.1|	Breaking lines
 		|25.2|	Aligning text
 		|25.3|	Indents and tabs

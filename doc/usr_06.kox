@@ -159,7 +159,7 @@ Vim이 초능력을 발휘한 것처럼 파일의 형식을 인식한 후 적절
 	!mkdir ~/.vim/colors
 	!cp $VIMRUNTIME/colors/morning.vim ~/.vim/colors/mine.vim
 <
-   위 명령은 Vim에서 실행한 것입니다. Vim이 $VIMRUNTIME 값을 알고 있으니까요.
+   위 명령은 Vim에서 실행한 것입니다.  Vim이 $VIMRUNTIME 값을 알고 있으니까요.
 
 2. 색 조합 파일을 편집합니다.  다음 내용이 유용할 겁니다:
 
