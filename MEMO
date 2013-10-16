@@ -7,20 +7,16 @@ Note, {something} 와 같이 색깔 강조가 의미있게 들어가는 것은 �
 
 command	명령
 line	줄
-word	낱말? 단어?
+word	어절 또는 단어
 button	버튼? 단추?
 manual	설명서
 highlighting	강조
 syntax highlighting	문법 강조
-edit	편집하다? 고치다?
-modify	수정하다? 고치다?
-typing	치다? 입력하다?
-undo	실행취소? 취소?
+undo	실행 취소
 argument	인자
-context	문맥? 상황
 Last change:	새로 고침:
 2006 May 07	2006년 5월 7일
-	2006년12월31일
+	2006년 12월 31일
 
 mode	모드
 normal mode	보통 모드
@@ -31,23 +27,23 @@ Ex mode	Ex 모드
 replace mode	바꾸기 모드
 
 replace	바꾸기
-option	옵션? 설정?
+option	옵션
 chapter	장
 section	절
-hyperlinks	링크?
+hyperlinks	링크
 cursor	커서
-tag	태그?
+tag	태그
 shell	셸
 menu	메뉴
-menu bar	메뉴바? 메뉴?
-toolbar	도구막대? 도구 모음? 툴바?
+menu bar	메뉴바 또는 메뉴
+toolbar	도구막대
 prompt	프롬프트
-text	글자? 글자들? 텍스트? 내용?
+text	내용(문맥에 따라 텍스트, 문자열, 글 등으로 번역)
 mark	마크?
 jump	뛰다
 yank	복사
 window	창
-quickfix	퀵픽스? 빠른 수정?
+quickfix	퀵픽스
 preview window	미리보기 창
 location list(quickfix와 유사한 것)	위치 리스트?
 conceal	숨김? 컨실?
@@ -58,18 +54,18 @@ session	세션
 
 foo? bars?	아무개? 갑? 을? 하나? 두울?
 
-fold	폴드? 접음?
+fold	폴드
 closed fold	접힌 fold
 opened fold	펼쳐진 fold
 column	열
 scroll binding	스크롤 연계? 스크롤 묶음?
-default	기본값?
+default	기본 값
 alternate file	교대 파일
 modifier command	수식 명령어? 꾸밈 명령어?
 label	이름표? 라벨?
 buffer	버퍼
 
-color scheme	색 조합? 컬러스킴?
+color scheme	색 조합
 
 
 
@@ -89,7 +85,7 @@ reference manual	상세 설명서
 status line	상태표시줄
 empty file	빈 파일
 underscore	밑줄
-width	너비? 폭?
+width	폭
 vertical separator	수직분리대
 history	히스토리
 mapping	매핑?
@@ -109,9 +105,11 @@ horizontal scroll bar	수평 스크롤 바
 blockwise Visual mode	블록 시각 모드
 abbreviation	약어
 register	레지스터
-filetype	파일타입? 파일 형식? filetype?
-flag	플래그? 선택사항?
+filetype	파일 형식
+flag	플래그
 modeline	모드 줄
+global plugin	범용 플러그인
+filetype plugin	파일 형식 플러그인
 
 
 Vim	Vim
