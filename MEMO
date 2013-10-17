@@ -1,0 +1,126 @@
+문장 끝나고 마침표 다음에 두 칸 띄우기!
+고유명사: 되도록 한글 표현으로.  단, 영어 표현으로 자주 쓰이거나 프로그램 이름인 경우 등은 예외로 함
+          예) Vim, GUI, 마이크로소프트 윈도, 아이디
+Note, {something} 와 같이 색깔 강조가 의미있게 들어가는 것은 영어 표현 유지
+
+절 내에서 대문자로 표시된 소제목 부분은 다음 줄에 -로 밑줄을 그음. 소제목이 두 글자이하인 경우, -를 다섯 개 그음
+
+참고: tw=78 체크용 찾기 패턴
+/\(\%78v[^=a-zA-Z0-9.?!"',*:|()>~]\)\|\(\%79v.\+\)\|\(\%80v.\+\)
+
+command	명령
+line	줄
+word	어절 또는 단어
+button	버튼? 단추?
+manual	설명서
+highlighting	강조
+syntax highlighting	문법 강조
+undo	실행 취소
+argument	인자
+Last change:	새로 고침:
+2006 May 07	2006년 5월 7일
+	2006년 12월 31일
+
+mode	모드
+normal mode	보통 모드
+visual mode	시각 모드
+insert mode	입력 모드
+command line mode	명령줄 모드
+Ex mode	Ex 모드
+replace mode	바꾸기 모드
+
+replace	바꾸기
+option	옵션
+chapter	장
+section	절
+hyperlinks	링크
+cursor	커서
+tag	태그
+shell	셸
+menu	메뉴
+menu bar	메뉴바 또는 메뉴
+toolbar	도구막대
+prompt	프롬프트
+text	내용(문맥에 따라 텍스트, 문자열, 글 등으로 번역)
+mark	마크?
+jump	뛰다
+yank	복사
+window	창
+quickfix	퀵픽스
+preview window	미리보기 창
+location list(quickfix와 유사한 것)	위치 리스트?
+conceal	숨김? 컨실?
+diff	디프? 차이?
+match(문법 강조에서의..)	매치
+view(:mkdview에서의..)	뷰
+session	세션
+
+foo? bars?	아무개? 갑? 을? 하나? 두울?
+
+fold	폴드
+closed fold	접힌 fold
+opened fold	펼쳐진 fold
+column	열
+scroll binding	스크롤 연계? 스크롤 묶음?
+default	기본 값
+alternate file	교대 파일
+modifier command	수식 명령어? 꾸밈 명령어?
+label	이름표? 라벨?
+buffer	버퍼
+
+color scheme	색 조합
+
+
+
+Making small/big changes?
+Recovering from a crash	복구하기? 작업 복구하기? 작업내용 복구하기? 사고에서 복구하기?
+Clever tricks	멋진 기술들?
+
+Editing Effectively	효율적으로? 효과적으로? 제대로? 편집하기  편집 더 잘하기?
+The undo tree	실행취소 트리? 다중 실행취소?
+
+formatted text	예쁘게?
+patterns	패턴? 꼴?
+Moving	이동하기? 돌아다니기?
+Tuning	주무르기?
+reference manual	상세 설명서
+
+status line	상태표시줄
+empty file	빈 파일
+underscore	밑줄
+width	폭
+vertical separator	수직분리대
+history	히스토리
+mapping	매핑?
+
+restore	불러오다
+autocommand	자동명령
+directory	디렉터리
+
+hidden buffer	숨겨진 버퍼
+alternate buffer	교대 버퍼
+binary file	이진 파일
+swap file	임시 파일
+keymap	키맵
+operator	오퍼레이터
+text object	텍스트 오브젝트
+horizontal scroll bar	수평 스크롤 바
+blockwise Visual mode	블록 시각 모드
+abbreviation	약어
+register	레지스터
+filetype	파일 형식
+flag	플래그
+modeline	모드 줄
+global plugin	범용 플러그인
+filetype plugin	파일 형식 플러그인
+
+
+Vim	Vim
+Microsoft Windows	마이크로소프트 윈도
+
+Note	Note
+한글 키워드, 태그
+
+
+
+# vim:ts=24

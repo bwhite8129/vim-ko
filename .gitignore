@@ -1,0 +1,6 @@
+.*.sw?
+
+/vim-*-doc-ko-*.zip
+/vim
+/doc/tags-ko
+/vim-ko.github.com
