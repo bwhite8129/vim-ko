@@ -81,8 +81,8 @@ translate: doc/$(D).kox $(VIMCOPY)/runtime/doc/$(D).txt
 	    +"vnew MEMO | set noscrollbind | norm Hw" \
 	    +"vertical resize 90" \
 
-# 설명서 번역 준비
-doc/%.kox: $(VIMCOPY)/runtime/doc/%.txt
+# 사용설명서 번역 준비
+doc/usr_%.kox: $(VIMCOPY)/runtime/doc/usr_%.txt
 	@\
 	if [ -e $@ ]; then touch $@; \
 	else \
@@ -113,6 +113,33 @@ doc/%.kox: $(VIMCOPY)/runtime/doc/%.txt
 	    +'norm ggno *Previous chapter:0"ny$$uo이전 장:0"my$$uc@r@t' \
 	    +'norm ggnoTable of contents:0"ny$$uo   차례:0"my$$uc@r' \
 	    +'norm gg' \
+	; \
+	fi
+
+# 상세 설명서 번역 준비
+doc/%.kox: $(VIMCOPY)/runtime/doc/%.txt
+	@\
+	if [ -e $@ ]; then touch $@; \
+	else \
+	set -e; \
+	cp $< $@; \
+	runvim() { \
+	    f=$$1; shift; \
+	    vim -N +1 $$f \
+	        +'set noet' \
+	        +'norm no0f|lv;hyW0"ty$$uc' \
+	        +'norm no/"npV:s/"npa/"mp0"ry$$uc' \
+	        "$$@" \
+	        +'wq'; \
+	}; \
+	runvim $@ \
+	    +'norm ggnoFor Vim version $(VERSION).0"ny$$uoVim version $(VERSION) 대상.0"my$$uc@r@t@r@t' \
+	    +'norm ggnoLast change:0"ny$$uo새로 고침:0"my$$uc@r@t@r@t' \
+	; \
+	runvim $@ \
+	    +'norm ggnoVIM REFERENCE MANUAL    by Bram Moolenaar0"ny$$uoVIM 상세 설명서 - Bram Moolenaar 저0"my$$uc@r:center' \
+	    +'norm yyp:set etV:retab!0vf-r WC     '"$(AUTHOR)"' 역:set noetV:retab!' \
+	    +'norm gglvf*hy``:center' \
 	; \
 	fi
 
