@@ -80,6 +80,7 @@ translate: doc/$(D).kox $(VIMCOPY)/runtime/doc/$(D).txt
 	    +"set scrollbind | norm \`\"" \
 	    +"vnew MEMO | set noscrollbind | norm Hw" \
 	    +"vertical resize 90" \
+	    +"set colorcolumn=79" \
 
 # 사용설명서 번역 준비
 doc/usr_%.kox: $(VIMCOPY)/runtime/doc/usr_%.txt
