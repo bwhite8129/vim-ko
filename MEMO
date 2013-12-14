@@ -28,6 +28,9 @@ insert mode	입력 모드
 command line mode	명령줄 모드
 Ex mode	Ex 모드
 replace mode	바꾸기 모드
+virtual replace mode	가상 바꾸기 모드
+operator-pending mode	오퍼레이터 대기 모드
+select mode	선택 모드
 
 replace	바꾸기
 option	옵션
@@ -43,6 +46,7 @@ toolbar	도구막대
 prompt	프롬프트
 text	내용(문맥에 따라 텍스트, 문자열, 글 등으로 번역)
 mark	마크?
+balloon	풍선
 jump	뛰다
 yank	복사
 window	창
@@ -85,7 +89,7 @@ Moving	이동하기? 돌아다니기?
 Tuning	주무르기?
 reference manual	상세 설명서
 
-status line	상태표시줄
+status line	상태 표시줄
 empty file	빈 파일
 underscore	밑줄
 width	폭
@@ -96,11 +100,12 @@ mapping	매핑?
 restore	불러오다
 autocommand	자동명령
 directory	디렉터리
+digraph	다이그래프
 
 hidden buffer	숨겨진 버퍼
 alternate buffer	교대 버퍼
 binary file	이진 파일
-swap file	임시 파일
+swap file	스왑 파일
 keymap	키맵
 operator	오퍼레이터
 text object	텍스트 오브젝트
@@ -110,9 +115,16 @@ abbreviation	약어
 register	레지스터
 filetype	파일 형식
 flag	플래그
+fold marker	폴드 마커
 modeline	모드 줄
 global plugin	범용 플러그인
 filetype plugin	파일 형식 플러그인
+secure mode	안전 모드 (.vimrc 로드 시. 'secure' 참조)
+
+
+sentence	문장
+paragraph	문단
+section	절
 
 
 Vim	Vim
