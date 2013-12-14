@@ -49,11 +49,16 @@ html: $(TAGS) $(TXTS)
 # vim-ko.github.com에 게시하기
 vim-ko.github.com:
 	[ -d $@ ] || git clone --recursive https://github.com/vim-ko/$@.git $@
-publish: vim-ko.github.com html
+publish: vim-ko.github.com html $(PACKAGE)
 	rm -rf $</doc/*
 	mkdir -p $</doc
 	cp -a html/* $</doc/
-	cd $< && git add doc && git add -u doc && git commit && git push
+	mkdir -p $</releases
+	cp $(PACKAGE) $</releases/
+	cd $< && git add doc && git add -u doc \
+		  && git add releases && git add -u releases \
+		  && git add index.html && ./set_link.sh $(PACKAGE) \
+		  && git commit && git push
 
 
 # 번역중인 설명서 설치
