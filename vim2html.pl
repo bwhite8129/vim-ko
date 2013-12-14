@@ -102,7 +102,7 @@ EOF
 	my $inexample = 0;
 	while( <IN> ) {
 		chop;
-		if ( /^\s*[-=]+\s*$/ ) {
+		if ( /^\s*=+\s*$/ ) {
 			print OUT "</pre><hr><pre>";
 			next;
 		}
