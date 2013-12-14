@@ -114,7 +114,8 @@ i에 1을 더해서, 동일한 변수에 다시 할당합니다.
 
 
 숫자의 세 가지 종류
-</pre><hr><pre>
+-------------------
+
 숫자는 10진수, 16진수, 8진수를 쓸 수 있습니다.  16진수는 "0x"나 "0X"로
 시작합니다.  예를 들어 "0x1f"는 10진수 31입니다.  8진수는 "0"으로 시작합니다.
 "017"은 10진수 15입니다.  주의: 10진수 앞에 0을 넣지 마십시오.  8진수로
@@ -181,7 +182,8 @@ i에 1을 더해서, 동일한 변수에 다시 할당합니다.
 
 
 변수 지우기
-</pre><hr><pre>
+-----------
+
 변수는 메모리를 차지하기도 하고, ":let" 명령의 결과에도 계속 나옵니다.  변수를
 지우려면 ":unlet" 명령을 사용하세요.  예:
 <code class="example"></code>
@@ -222,7 +224,8 @@ exists()가 아니면"이라는 뜻이지요.
 
 
 문자열 변수와 상수
-</pre><hr><pre>
+------------------
+
 지금까지는 변수에 숫자만 넣어왔습니다.  문자열도 넣을 수 있습니다.  숫자와
 문자열은 Vim이 지원하는 변수의 기본 타입입니다.  타입은 동적(dynamic)이어서,
 매번 변수에 ":let"으로 값을 할당할 때마다 지정됩니다.  타입에 관한 더 자세한
@@ -300,7 +303,8 @@ Vim은 표현식을 다루기 위해 풍부하지만 단순한 방식을 사용�
 
 
 수학
-</pre><hr><pre>
+-----
+
 기본적인 요소들을 조합할 수 있다면 더 신나겠죠?  간단한 수학으로 시작해봅시다:
 
 	a + b		더하기
@@ -386,7 +390,8 @@ C에서 빌려 온 조건 표현식도 있습니다:
 <code class="example"></code>
 <code class="example"></code>
 논리 연산
-</pre><hr><pre>
+---------
+
 이미 앞서의 예에서 몇 가지 사용해봤습니다.  제일 많이 쓰는 것들은 다음과
 같습니다:
 
@@ -449,7 +454,8 @@ C에서 빌려 온 조건 표현식도 있습니다:
 
 
 그 밖의 루프 관련
-</pre><hr><pre>
+-----------------
+
 ":while" 명령은 앞에서 설명했습니다.  ":while"과 ":endwhile" 사이에는 다음 두
 가지 명령문이 더 들어갈 수 있습니다:
 
@@ -560,7 +566,8 @@ substitute() 호출을 하기 전후에 다른 일들을 더 한다면 함수를
 
 
 함수							<b class="vimtag">*<a name="function-list">function-list</a>*</b>
-</pre><hr><pre>
+-----
+
 많은 함수가 있습니다.  여기서는 용도별로 묶어서 살펴보겠습니다.  알파벳순으로
 정리한 목록은 |<code class="badlink">functions</code>|를 참고하세요.  함수 이름에서 CTRL-]를 누르면 더
 자세한 도움말로 이동합니다.
@@ -971,7 +978,8 @@ Vim에서는 직접 함수를 만들 수도 있습니다.  기본적인 함수 �
 <code class="example"></code>
 <code class="example"></code>
 범위 사용하기
-</pre><hr><pre>
+-------------
+
 ":call" 명령에는 줄 범위를 줄 수 있습니다.  이 기능은 두 가지 형태로
 사용되는데요.  만약 함수가 "range" 키워드와 함께 정의되었다면, 함수 자체적으로
 줄 범위를 처리합니다.
@@ -1009,7 +1017,8 @@ Vim에서는 직접 함수를 만들 수도 있습니다.  기본적인 함수 �
 
 
 가변 인자
-</pre><hr><pre>
+---------
+
 Vim에서는 다양한 수의 인자를 받는 함수를 정의할 수 있습니다.  예를 들어 아래
 명령은 최소 1개의 인자(start)를 받고, 최대 20개까지 선택적인 인자를 받을 수
 있는 함수를 정의합니다:
@@ -1041,7 +1050,8 @@ a:000 변수를 쓸 수도 있는데, "..." 인자 전체의 리스트입니다.
 
 
 함수 나열하기
-</pre><hr><pre>
+-------------
+
 ":function" 명령은 모든 사용자 정의 함수의 이름과 인자를 보여줍니다:
 <code class="example"></code>
 <code class="example">	:function</code>
@@ -1059,7 +1069,8 @@ a:000 변수를 쓸 수도 있는데, "..." 인자 전체의 리스트입니다.
 
 
 디버깅
-</pre><hr><pre>
+------
+
 에러 메시지를 받았을 때나 디버깅 할 때 줄 번호는 매우 유용합니다.  디버깅
 모드에 대해서는 |<code class="badlink">debug-scripts</code>|를 참고하세요.
    'verbose' 설정을 12 이상으로 놓아서 모든 함수 호출을 볼 수도 있습니다.
@@ -1067,7 +1078,8 @@ a:000 변수를 쓸 수도 있는데, "..." 인자 전체의 리스트입니다.
 
 
 함수 지우기
-</pre><hr><pre>
+-----------
+
 Show() 함수를 지우려면:
 <code class="example"></code>
 <code class="example">	:delfunction Show</code>
@@ -1076,7 +1088,8 @@ Show() 함수를 지우려면:
 
 
 함수 레퍼런스
-</pre><hr><pre>
+-------------
+
 가끔씩 함수를 가리키는 변수 같은 것이 있으면 유용할 때가 있습니다.  function()
 함수를 사용하면 됩니다.  함수의 이름을 함수 레퍼런스로 바꿔줍니다:
 <code class="example"></code>
@@ -1151,7 +1164,8 @@ add()의 두 번째 인자는 하나의 항목으로 리스트에 추가됩니�
 
 
 FOR 루프
-</pre><hr><pre>
+--------
+
 리스트로 할 수 있는 멋진 일 중 하나는 각 항목에 대해 같은 일을 반복할 수
 있다는 것이지요:
 <code class="example"></code>
@@ -1206,7 +1220,8 @@ range()에서 생기는 첫 항목이 0이고, 따라서 마지막 항목은 리
 
 
 사전
-</pre><hr><pre>
+-----
+
 사전은 키-값 쌍들을 저장합니다.  키를 알면 빠르게 찾을 수 있습니다.  사전은
 중괄호로 만듭니다:
 <code class="example"></code>
@@ -1250,7 +1265,8 @@ range()에서 생기는 첫 항목이 0이고, 따라서 마지막 항목은 리
 
 
 사전 함수
-</pre><hr><pre>
+---------
+
 사전의 항목들은 일반적으로 대괄호 안에 키를 써서 얻을 수 있습니다:
 <code class="example"></code>
 <code class="example">	:echo uk2nl['one']</code>
@@ -1317,7 +1333,8 @@ join() 함수는 split()의 정반대입니다.  어절들의 리스트를 받�
 
 
 객체 지향 프로그래밍
-</pre><hr><pre>
+--------------------
+
 이제 사전에 값과 함수를 모두 넣을 수 있게 되었지요.  그렇다면 사전을 객체처럼
 사용할 수도 있을 겁니다.
    위에서 우리는 네덜란드어를 영어로 번역하는 사전을 사용했습니다.  동일한
@@ -1456,7 +1473,8 @@ join() 함수는 split()의 정반대입니다.  어절들의 리스트를 받�
 
 
 공백
-</pre><hr><pre>
+-----
+
 빈 줄을 쓸 수 있습니다. 무시됩니다.
 
 줄 맨 앞의 공백 문자(공백이나 탭)는 언제나 무시됩니다.  요소들 사이의 여러
@@ -1487,7 +1505,8 @@ join() 함수는 split()의 정반대입니다.  어절들의 리스트를 받�
 <code class="example"></code>
 <code class="example"></code>
 주석
-</pre><hr><pre>
+-----
+
 " (큰따옴표) 문자로 주석을 시작합니다.  따옴표를 포함하여 그 뒤에서부터 줄의
 끝까지는 모두 주석으로 간주되어 무시됩니다.  단, 아래의 예에서와 같이 주석을
 허용하지 않는 명령은 예외입니다.  주석은 줄의 어느 위치에서나 시작할 수
@@ -1536,7 +1555,8 @@ join() 함수는 split()의 정반대입니다.  어절들의 리스트를 받�
 
 
 위험
-</pre><hr><pre>
+-----
+
 아래 예에서는 더 큰 문제가 나타납니다:
 <code class="example"></code>
 <code class="example">	:map ,ab o#include</code>
@@ -1558,7 +1578,8 @@ join() 함수는 split()의 정반대입니다.  어절들의 리스트를 받�
 <code class="example"></code>
 <code class="example"></code>
 뷰 복구하기
-</pre><hr><pre>
+-----------
+
 가끔 무언가 수정을 한 뒤 원래 커서가 있던 곳으로 돌아가고 싶을 수 있겠지요.
 이왕이면 상대적인 위치가 그대로여서 화면의 맨 위에 동일한 내용이 보이면 더
 좋을 겁니다.
@@ -1580,7 +1601,8 @@ join() 함수는 split()의 정반대입니다.  어절들의 리스트를 받�
 
 
 패키징
-</pre><hr><pre>
+------
+
 다른 곳에서 추가한 함수들과 이름이 겹치는 것을 막기 위해 다음과 같은 방식을
 사용하세요:
 - 모든 함수 이름 앞에 고유한 문자열을 붙이세요.  저는 보통 약어를 씁니다.
@@ -1624,7 +1646,8 @@ join() 함수는 split()의 정반대입니다.  어절들의 리스트를 받�
 
 
 이름
-</pre><hr><pre>
+-----
+
 가장 먼저 플러그인 이름을 골라야 합니다.  이름만으로 플러그인이 제공하는
 기능을 알 수 있어야 합니다.  또한 다른 사람이 다른 일을 하는 플러그인을 만들
 법한 이름은 피해야 합니다.  그리고 오래된 윈도우 시스템을 위해 이름은 8자
@@ -1638,7 +1661,8 @@ join() 함수는 split()의 정반대입니다.  어절들의 리스트를 받�
 
 
 내용
-</pre><hr><pre>
+-----
+
 플러그인 내용부터 시작합시다.  실제 일을 하는 부분은 아래와 같습니다:
 <code class="example"></code>
 <code class="example"> 14	iabbrev teh the</code>
@@ -1655,7 +1679,8 @@ join() 함수는 split()의 정반대입니다.  어절들의 리스트를 받�
 
 
 헤더
-</pre><hr><pre>
+-----
+
 플러그인을 만들다 보면 아마 계속해서 새로운 오타 교정을 추가할 것이고, 이내
 이런 저런 버전들이 쌓일 것입니다.  또한 이 파일을 배포하면, 사람들은 누가 이런
 환상적인 플러그인을 만들었고, 어떻게 감사를 표할 수 있는지 알고 싶을 겁니다.
@@ -1674,7 +1699,8 @@ join() 함수는 split()의 정반대입니다.  어절들의 리스트를 받�
 <code class="example"></code>
 <code class="example"></code>
 줄 이어서 쓰기, 부작용 피하기				<b class="vimtag">*<a name="use-cpo-save">use-cpo-save</a>*</b>
-</pre><hr><pre>
+-----------------------------
+
 18번째 줄 위에서 줄 이어서 쓰기|<code class="badlink">line-continuation</code>| 기능을 사용했습니다.
 하지만 사용자가 'compatible'을 켜놓았다면 문제가 생기는데, 아마 에러 메시지를
 보게 될 겁니다.  하지만 그렇다고 'compatible' 옵션을 꺼버리면 부작용이
@@ -1697,7 +1723,8 @@ join() 함수는 split()의 정반대입니다.  어절들의 리스트를 받�
 
 
 로드하지 않기
-</pre><hr><pre>
+-------------
+
 사용자가 이 플러그인을 항상 로드하고 싶지는 않을 수도 있습니다.  또는 시스템
 관리자가 시스템 공용 플러그인 디렉터리에 설치했는데, 사용자는 자신만의 버전을
 쓰고 싶을 수도 있고요.  따라서 사용자에겐 언제나 특정 플러그인을 끌 수 있는
@@ -1721,7 +1748,8 @@ if-endif 를 쓰는 것보다 훨씬 간편하지요.
 
 
 매핑
-</pre><hr><pre>
+-----
+
 자 이제 플러그인을 더 재미있게 만들어봅시다.  현재 커서가 위치한 단어에 대한
 교정어를 추가하는 매핑을 만들 겁니다.  매핑에 쓸 키 입력을 우리가 정할 수도
 있겠지만, 사용자가 이미 쓰는 것과 겹칠 수 있습니다.  사용자가 플러그인이
@@ -1760,7 +1788,8 @@ if-endif 를 쓰는 것보다 훨씬 간편하지요.
 
 
 조각들
-</pre><hr><pre>
+------
+
 스크립트가 길어지면 작은 조각들로 쪼개고 싶어지곤 합니다.  함수와 매핑을
 사용하면 쪼갤 수 있습니다.  하지만 이 함수와 매핑들이 다른 스크립트의 것들과
 충돌하기를 바라지는 않을 겁니다.  예를 들어, 당신이 Add() 라는 함수를
@@ -1823,7 +1852,8 @@ Vim이 알아서 스크립트의 Add() 함수를 찾아줍니다.
 
 
 <code class="special">&lt;SID&gt;</code> 와 <code class="special">&lt;Plug&gt;</code>						<b class="vimtag">*<a name="using-%3CPlug%3E">using-&lt;Plug&gt;</a>*</b>
-</pre><hr><pre>
+---------------
+
 <code class="special">&lt;SID&gt;</code> 와 <code class="special">&lt;Plug&gt;</code> 모두 다른 매핑을 통해서 사용되는 매핑들을, 직접 입력하는
 매핑들과 분리하기 위해서 사용합니다.  <code class="special">&lt;SID&gt;</code>와 <code class="special">&lt;Plug&gt;</code>의 차이를 살펴봅시다:
 
@@ -1847,7 +1877,8 @@ Vim이 알아서 스크립트의 Add() 함수를 찾아줍니다.
 
 
 사용자 정의 명령
-</pre><hr><pre>
+----------------
+
 이제 오타 교정을 추가하는 사용자 명령을 만들어봅시다:
 <code class="example"></code>
 <code class="example"> 38	if !exists(":Correct")</code>
@@ -1861,7 +1892,8 @@ Vim이 알아서 스크립트의 Add() 함수를 찾아줍니다.
 
 
 스크립트 변수
-</pre><hr><pre>
+-------------
+
 변수가 "s:"로 시작하면 스크립트 변수입니다.  스크립트 안에서만 사용할 수
 있습니다.  스크립트 밖에서는 보이지 않습니다.  다른 스크립트와 동일한 변수
 이름을 써서 생기는 문제를 막아주는 것이지요.  변수는 Vim이 동작중인 동안 계속
@@ -1886,7 +1918,8 @@ Vim이 알아서 스크립트의 Add() 함수를 찾아줍니다.
 
 
 결과
-</pre><hr><pre>
+-----
+
 결과인 전체 플러그인입니다:
 <code class="example"></code>
 <code class="example">  1	" Vim global plugin for correcting typing mistakes</code>
@@ -1947,7 +1980,8 @@ Vim이 알아서 스크립트의 Add() 함수를 찾아줍니다.
 <code class="example"></code>
 <code class="example"></code>
 문서화							<b class="vimtag">*<a name="write-local-help">write-local-help</a>*</b>
-</pre><hr><pre>
+------
+
 방금 만든 플러그인에 약간의 문서화를 하는 것도 좋은 생각입니다.  특히 사용자가
 그 동작을 직접 바꿀 수 있다면 말이죠.  문서를 어떻게 설치하는지는
 |<a href="usr_05.html#add-local-help">add-local-help</a>|를 참고하세요.
@@ -1986,7 +2020,8 @@ help.txt의 "LOCAL ADDITIONS:" 절에 추가됩니다 |<a href="help.html#local-
 
 
 파일 형식 인식						<b class="vimtag">*<a name="plugin-filetype">plugin-filetype</a>*</b>
-</pre><hr><pre>
+--------------
+
 만약 Vim에서 파일 형식을 제대로 인식하지 못한다면, 별도의 파일에 파일 형식
 인식을 위한 코드 조각을 추가해야 합니다.  보통 파일명이 패턴에 맞으면 파일
 형식을 설정하는 자동명령의 형태를 띱니다.  예:
@@ -2002,7 +2037,8 @@ help.txt의 "LOCAL ADDITIONS:" 절에 추가됩니다 |<a href="help.html#local-
 
 
 요약							<b class="vimtag">*<a name="plugin-special">plugin-special</a>*</b>
-</pre><hr><pre>
+-----
+
 플러그인 내에서 사용하는 특별한 것들을 정리해봅시다:
 
 s:name			스크립트 내에서만 유효한 변수
@@ -2035,7 +2071,8 @@ exists(":Cmd")		사용자 정의 명령이 존재하는지 확인한다.
 
 
 비활성화 하기
-</pre><hr><pre>
+-------------
+
 많은 사람들이 사용하는 파일 형식 플러그인을 만든다면, 로드되지 않게 비활성화
 할 수 있어야 합니다.  플러그인의 맨 위에 다음 내용을 넣으세요:
 <code class="example"></code>
@@ -2068,7 +2105,8 @@ $VIMRUNTIME보다 앞에 와야 합니다.
 
 
 옵션
-</pre><hr><pre>
+-----
+
 파일 형식 플러그인이 현재 버퍼에만 영향을 준다는 점을 확실히 하려면 옵션을
 바꿀 때 다음 명령을 사용하세요:
 <code class="example"></code>
@@ -2087,7 +2125,8 @@ $VIMRUNTIME보다 앞에 와야 합니다.
 <code class="example"></code>
 <code class="example"></code>
 매핑
-</pre><hr><pre>
+-----
+
 매핑이 현재 버퍼에만 동작하도록 하려면 다음 명령을 사용하십시오:
 <code class="example"></code>
 <code class="example">	:map <code class="special">&lt;buffer&gt;</code></code>
@@ -2131,7 +2170,8 @@ no_mail_maps		특정 파일 형식에서만 매핑을 비활성화
 
 
 사용자 정의 명령
-</pre><hr><pre>
+----------------
+
 특정 파일 형식에 대해 사용자 정의 명령을 추가해서 한 버퍼에서만 사용되게
 하려면 |<code class="badlink">:command</code>| 명령에 "-buffer" 인자를 주면 됩니다. 예:
 <code class="example"></code>
@@ -2139,14 +2179,16 @@ no_mail_maps		특정 파일 형식에서만 매핑을 비활성화
 <code class="example"></code>
 <code class="example"></code>
 변수
-</pre><hr><pre>
+-----
+
 파일 형식 플러그인은 해당되는 각각의 버퍼들마다 로드됩니다.  스크립트 내에서만
 유효한 변수들은 |<code class="badlink">s:var</code>| 모든 호출 간에 공유됩니다.  한 버퍼에서만 사용할
 변수를 원한다면 버퍼 내에서만 유효한 변수 |<code class="badlink">b:var</code>| 를 사용하세요.
 
 
 함수
-</pre><hr><pre>
+-----
+
 함수를 정의할 때는, 한 번만 동작해야 합니다.  하지만 파일 형식 플러그인은 해당
 형식의 파일이 열릴 때마다 계속 로드됩니다.  아래와 같은 구조를 사용하면 함수가
 딱 한 번만 정의되도록 할 수 있습니다:
@@ -2159,7 +2201,8 @@ no_mail_maps		특정 파일 형식에서만 매핑을 비활성화
 
 
 되돌리기						<b class="vimtag">*<a name="undo_ftplugin">undo_ftplugin</a>*</b>
-</pre><hr><pre>
+--------
+
 사용자가 ":setfiletype xyz"를 하면 기존 파일 형식으로 인한 효과는
 사라져야 합니다.  b:undo_ftplugin 변수에 파일 형식 플러그인의 옵션을 되돌릴
 명령을 넣으십시오.  예:
@@ -2175,7 +2218,8 @@ no_mail_maps		특정 파일 형식에서만 매핑을 비활성화
 
 
 파일명
-</pre><hr><pre>
+------
+
 파일명에 파일 형식 이름이 반드시 포함되어야 합니다 |<a href="usr_05.html#ftplugin-name">ftplugin-name</a>|.  아래 세
 가지 형식 중 하나를 사용하세요:
 
@@ -2187,7 +2231,8 @@ no_mail_maps		특정 파일 형식에서만 매핑을 비활성화
 
 
 요약							<b class="vimtag">*<a name="ftplugin-special">ftplugin-special</a>*</b>
-</pre><hr><pre>
+-----
+
 파일 형식 플러그인에서 사용하는 특별한 것들의 요약:
 
 <code class="special">&lt;LocalLeader&gt;</code>		"maplocalleader"의 값으로, 사용자가 파일 형식
@@ -2406,6 +2451,6 @@ Vim 스크립트는 모든 시스템에서 쓸 수 있습니다.  하지만 tar�
 
 저작권: |<a href="usr_01.html#manual-copyright">manual-copyright</a>| 참고  vim:tw=78:ts=8:ft=help:norl:
 </pre>
-<p><i>Generated by vim2html on 2013. 12. 14. (토) 11:28:19 KST</i></p>
+<p><i>Generated by vim2html on 2013. 12. 14. (토) 11:37:35 KST</i></p>
 </body>
 </html>
