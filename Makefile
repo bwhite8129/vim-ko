@@ -48,7 +48,7 @@ html: $(TAGS) $(TXTS)
 
 # vim-ko.github.com에 게시하기
 vim-ko.github.com:
-	[ -d $@ ] || git clone --recursive git@github.com:vim-ko/$@.git $@
+	[ -d $@ ] || git clone --recursive https://github.com/vim-ko/$@.git $@
 publish: vim-ko.github.com html
 	rm -rf $</doc/*
 	mkdir -p $</doc
@@ -65,7 +65,7 @@ install: $(PACKAGE)
 $(TAGS): $(TXTS)
 	vim +"helptags doc" +"qa!"
 
-# 섦명서 번역에 앞서 읽어볼 도움말
+# 설명서 번역에 앞서 읽어볼 도움말
 help:
 	vim +"help help-translated" +"only" +"norm zt"
 
