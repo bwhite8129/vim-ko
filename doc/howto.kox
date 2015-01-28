@@ -1,0 +1,95 @@
+*howto.txt*     Vim version 7.4 대상.  새로 고침: 2006 Apr 02
+
+
+		     VIM 상세 설명서 - Bram Moolenaar 저
+				       정지용 역
+
+
+... 하려면				*howdoi* *how-do-i* *howto* *how-to*
+
+|tutor|			시작
+|:quit|			Vim에서 나가기. 갇혔어요. 도와주세요!
+|initialization|	Vim 초기화
+|vimrc-intro|		Vim 스크립트 파일(vimrc) 쓰기
+|suspend|		Vim을 중지
+|usr_11.txt|		비정상 종료 후 복구
+|07.4|			파일을 덮어쓸 때 백업 생성
+
+|usr_07.txt|		여러 파일을 편집
+|23.4|			이진 파일을 편집
+|usr_24.txt|		내용을 삽입
+|deleting|		내용을 제거
+|usr_04.txt|		내용을 수정
+|04.5|			내용을 복사하거나 이동
+|usr_25.txt|		형식 맞추기
+|30.6|			주석 형식 맞추기
+|30.2|			C 프로그램 들여쓰기
+|25.3|			들여쓰기를 자동으로
+
+|usr_26.txt|		명령을 반복
+|02.5|			실행 취소와 반복
+
+|usr_03.txt|		여기저기 이동
+|word-motions|		단어 단위로 이동
+|left-right-motions|	좌우로 이동
+|up-down-motions|	상하로 이동
+|object-motions|	텍스트 오브젝트 단위로 이동
+|various-motions|	다양한 이동
+|object-select|		텍스트 오브젝트 선택
+|'whichwrap'|		줄 끝에서 다음 줄로 넘어가기
+|'virtualedit'|		내용이 없는 곳으로 이동
+|usr_27.txt|		패턴으로 찾기
+|tags-and-searches|	태그 및 특수한 찾기
+|29.4|			인클루드한 파일에서 변수, 함수, 매크로 찾기
+|K|			커서 밑의 키워드를 매뉴얼에서 찾기
+
+|03.7|			스크롤
+|'sidescroll'|		양 옆으로 수평 스크롤
+|'scrolloff'|		문맥을 몇 줄 보여주게 설정
+
+|mode-switching|	모드 변경
+|04.4|			시각 모드 사용
+|'insertmode'|		Vim을 입력 모드에서 시작
+
+|40.1|			키 매핑
+|24.7|			약어 추가
+
+|ins-expandtab|		입력 모드에서 탭을 스페이스로 변환
+|i_CTRL-R|		입력 모드에서 레지스터의 내용을 입력
+|24.3|			입력 모드에서 자동 완성
+|25.1|			한 줄이 너무 길어지면 자동 줄바꿈
+
+|20.1|			명령줄에서 편집
+|20.3|			명령줄에서 자동완성
+|'cmdheight'|		명령줄의 높이를 늘이기
+|10.3|			명령줄에서 범위 지정
+|40.3|			버퍼/창을 읽기/쓰기 들어가기/나가기 하기 전/후에
+			명령이 자동으로 실행되도록 지정
+
+|'autowrite'|		자동 저장
+|30.1|			Vim 안에서 편집-컴파일-편집 작업 반복이나 컴파일 후 
+			오류 수정을 빠르게 하기
+
+|options|		옵션 설정
+|auto-setting|		옵션 자동 설정
+|term-dependent-settings| 터미널 이름에 따라 옵션을 설정
+|save-settings|		설정을 저장
+|:quote|		.vim 파일에 주석 넣기
+|'helpheight'|		기본 도움말 높이를 변경
+|'highlight'|		다양한 강조 설정
+|'title'|		창 제목을 지정
+|'icon'|		창 아이콘을 지정
+|'report'|		몇 개의 줄을 바꿨는지 표시하지 않도록
+|'shortmess'|		엔터 입력 |hit-enter| 을 안해도 되도록
+
+|mouse-using|		Vim에서 마우스를 사용
+|usr_08.txt|		여러 개의 창과 버퍼를 관리
+|gui.txt|		GUI 사용
+
+|못합니다! (아직은)|	Vim으로 설거지
+
+|usr_06.txt|		문법 강조를 켜고 끄기
+|2html.vim|		색색으로 표시된 내용을 HTML로 변환
+|less|			Vim을 문법 강조가 된 less나 more처럼 사용
+
+ vim:tw=78:ts=8:ft=help:norl:
